@@ -1,288 +1,376 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-US"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquerries.css">
-    <link rel="icon" href="./assests/logo-L.png" type="image/x-icon">
-    <link rel="shortcut icon" href="./assests/logo-L.png" type="image/x-icon">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Logeshwar S</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Logeshwar S</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assests/ProfileFinal.png" alt="Logeshwar profile picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello ,I'm</p>
-            <h1 class="title">Logeshwar S</h1>
-            <p class="section__text__p2">Information Security Analyst</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assests/Resume.pdf')">
-                    Resume
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assests/linkedin.png" alt="LinkedIn Profile"
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/logeshwar-s/'">
-                
-                <img src="./assests/github.png" alt="Github Profile"
-                class="icon" 
-                onclick="location.href='https://github.com/Logeshwar-S'">
-            </div>
-        </div>
-        <img src="./assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#about'">  
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="about-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="./assests/experience.png" alt="experience icon" class="icon">
-                    <h3>Experience</h3>
-                    <p>Security Operations<br />Penetration Testing</p>
-                </div>
-                <div class="details-container">
-                    <img src="./assests/education.png" alt="education icon" class="icon">
-                    <h3>Education</h3>
-                    <p>B.E Electrical and Electronics<br /></p>
-                </div>
-            </div>
-            <div class="text-container">
-                <p>Hey there! I'm all about cybersecurity and keeping the digital world safe. You could say I'm a bit of a cybersecurity enthusiast. I'm super passionate about making sure our online spaces are secure and protected from all those cyber baddies out there.
 
-                    <br/><br/>Whether it's diving into the nitty-gritty of threat detection or analyzing security incidents, I'm all in. I love staying on top of the latest trends and technologies in the cybersecurity realm because, let's face it, it's always evolving, and there's always something new to learn.
-                    
-                    <br/><br/>So, if you're into cyber stuff too, or just curious about how to keep your digital life locked down tight, let's chat! I've got experience in hacking platforms and navigating the cybersecurity landscape, so I'm here to help. Feel free to drop me a line via the contact section below, and let's connect!
-                </p>
-            </div>
-        </div>
-        <img src="./assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Skills'">
-    </section>
-    <section id="Skills">
-        <p class="section__text__p1">Exlore My</p>
-        <h1 class="title">Skills</h1>
-        <div class="skills-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Blue Team</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>Active Directory</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>Splunk</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>Sysmon</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>System Onion</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>VirtualBox</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>Windows Firewall</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="skills-sub-title">Red Team</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>Nmap</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>Burp Suite</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div>
-                                <h3 class="skill-details">Wireshark</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div>
-                                <h3 class="skill-details">Metasploit</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assests/checkmark.png" alt="skills icon" class="icon">
-                            <div class="skill-details">
-                                <h3>SQLMap</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#project'">
-    </section>
-    <section id="project">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="skills-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assests/project-1.png" alt="Project1" class="project-img">
 
-                </div>
-                <h2 class="skills-sub-title project-title">Wazuh & SOAR Implementation</h2>
-                <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com'">
-                    Github
-                    </button>
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://www.youtube.com/'">
-                    Demo
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assests/project-2.png" alt="Project2" class="project-img">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Cybersecurity Portfolio</h1>
 
-                </div>
-                <h2 class="skills-sub-title project-title">Active Directory & Simulated Attack</h2>
-                <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com'">
-                    Github
-                    </button>
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://www.youtube.com/'">
-                    Demo
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assests/project-3.png" alt="Project3" class="project-img">
+        
+          <img src="/assets/profile.jpg" alt="Logo">
+        
 
-                </div>
-                <h2 class="skills-sub-title project-title">Honeypot Setup with T-POT on Vultr</h2>
-                <div class="btn-container">
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://github.com'">
-                    Github
-                    </button>
-                    <button 
-                    class="btn btn-color-2 project-btn" 
-                    onclick="location.href='https://www.youtube.com/'">
-                    Demo
-                    </button>
-                </div>
-            </div>
-            </div>
-        </div>
-        <img src="./assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assests/email.png" alt="email icon" 
-                class="icon contact-icon email-icon">
-                <p><a href="mailto:logeshwar.0512@gmail.com">logeshwar.0512@gmail.com</a></p>
-            </div>
-            
-            <div class="contact-info-container">
-                <img src="./assests/linkedin.png" alt="linkedin icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/logeshwar-s/">LinekdIn</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Logeshwar S. All Rights Reserved</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+        <p></p>
+
+        
+
+        
+        <p class="view"><a href="https://github.com/Logeshwar-S" target="_blank">View My GitHub Profile</a></p>
+        <p class="view"><a href="/assets/resume.pdf" download="Logeshwar_Resume.pdf" target="_blank">Download My Resume</a></p>
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="cybersecurity-portfolio">Greeting !!</h1>
+<p>Welcome to my cybersecurity portfolio! This portfolio is a collection of my journey in cybersecurity, showcasing my skills, projects, and hands-on experience in keeping the digital world secure. From analyzing threats to tackling security challenges, I’m always exploring and learning.
+    <br><br>Dive in to see my work, and feel free to connect—let’s talk all things cyber! 🚀
+</p>
+
+<h2 id="about-me">About Me</h2>
+<p>Hey there, it's Logeshwar! I'm all about cybersecurity and keeping the digital world safe. You could say I'm a bit of a cybersecurity enthusiast. I'm super passionate about making sure our online spaces are secure and protected from all those cyber baddies out there.
+
+    <br><br>Whether it's diving into the nitty-gritty of threat detection or analyzing security incidents, I'm all in. I love staying on top of the latest trends and technologies in the cybersecurity realm because, let's face it, it's always evolving, and there's always something new to learn.
+    
+    <br><br>So, if you're into cyber stuff too, or just curious about how to keep your digital life locked down tight, let's chat! I've got experience in hacking platforms and navigating the cybersecurity landscape, so I'm here to help. Feel free to drop me a line via the contact section below, and let's connect!</p>
+
+
+<strong>Background</strong>: I graduated with a B.E. in Electrical and Electronics Engineering (EEE) in 2024, though let’s be real—my degree has little to do with what I actually love doing. Turns out, cybersecurity and coding stole my attention more than circuits ever could. But hey, passion beats relevance, right?<br><br>
+<strong>Interests</strong>: I'm deeply interested in cybersecurity, coding, AI agents, and blockchain. Whether it's breaking into (and securing) systems, exploring decentralized tech, or experimenting with AI-driven security tools, I'm always up for the challenge.<br><br>
+<strong>Hobbies</strong>: When I'm not deep into security research, you'll find me watching football (huge passion), playing video games, binge-watching anime, or traveling—because even cybersecurity nerds need a break sometimes</p>
+
+<h2 id="technical-skills">Technical Skills</h2>
+
+<h3>Programming Languages</h3>
+<ul>
+    <li>Python</li>
+    <li>C++</li>
+    <li>JavaScript</li>
+    <li>PHP</li>
+    <li>Bash</li>
+    <li>SQL</li>
+    <li>PowerShell</li>
+</ul>
+
+
+<h3>Technologies & Tools</h3>
+
+<p><strong>SIEM:</strong> Splunk, Wazuh</p>
+<p><strong>IDS/IPS:</strong> Snort, Suricata, Windows Defender</p>
+<p><strong>Penetration Testing Tools:</strong> Nmap, Metasploit, Burp Suite, John the Ripper, Hydra</p>
+<p><strong>Malware Analysis Tools:</strong> Virutotal, FLOSS, PE Studio, ExifTool, Process Explorer, ProcMon, Wireshark</p>
+<p><strong>System Administration & SOC Tools:</strong> Active Directory, Windows Event Viewer, Sysmon</p>
+<p><strong>Virtualization & Development:</strong> VirtualBox, VMware Workstation, Docker, Git, GitHub</p>
+
+<h3>Technical Concepts</h3>
+<ul>
+    <li>Linux System Administration</li>
+    <li>Network Traffic Analysis</li>
+    <li>Incident Response</li>
+    <li>Malware Analysis</li>
+    <li>Log Analysis</li>
+    <li>Threat Intelligence</li>
+    <li>Vulnerability Assessment</li>
+</ul>
+
+<h3>Additional Skills</h3>
+<ul>
+    <li>Scripting & Automation</li>
+    <li>AWS Developer tools</li>
+    <li>Data Science</li>
+    <li>Web & API Development </li>
+</ul>
+
+<h2 id="certifications-and-training">Certifications and Training</h2>
+
+<p>Here are some certifications and training programs I’ve completed or am currently pursuing to strengthen my cybersecurity expertise:</p>
+
+<h3 id="certifications">Certifications:</h3>
+<ul>
+  <li><strong>Google Cybersecurity Specialization – Coursera</strong> (Completed)</li>
+  <li><strong>Introduction to Linux (LFS101x) – The Linux Foundation</strong> (Completed)</li>
+  <li><strong>Python for Data Science, AI & Development – Coursera</strong> (Completed)</li>
+  <li><strong>CompTIA Security+ – CompTIA</strong> (In Progress)</li>
+  <li><strong>AWS Certified Security Specialty – AWS</strong> (In Progress)</li>
+</ul>
+
+<h3 id="training-and-platforms">Training and Platforms:</h3>
+<p><strong>Hack The Box (HTB):</strong><br>
+    Actively engaged in solving real-world cybersecurity challenges, enhancing my practical skills in penetration testing. Completed various machines covering areas like web exploitation, privilege escalation, and reverse engineering.</p>
+
+<p><strong>TryHackMe:</strong><br>
+    Regularly participate in hands-on labs and cybersecurity scenarios to strengthen my understanding of security concepts and real-world attack vectors.</p>
+
+<p><strong>LeetCode:</strong><br>
+    Consistently practice coding problems to refine my problem-solving skills and strengthen my grasp of algorithms and data structures.</p>
+
+<p><strong>Digital Forensics (Self-Learning):</strong><br>
+    Currently exploring digital forensics through YouTube, diving into forensic techniques, incident analysis, and cyber investigations—finding it really fascinating!</p>
+<h2 id="project-experience">Project Experience</h2>
+
+<p>Here are some of my recent projects where I’ve explored different aspects of cybersecurity, including malware analysis, network security, and penetration testing. These projects reflect my hands-on experience in building secure environments, analyzing threats, and understanding attack methodologies.</p>
+
+<h3 id="project-1-malware-analysis-sandbox"><strong>Project 1: Malware Analysis Sandbox</strong></h3>
+
+<p><strong>Objective:</strong> This project focuses on setting up a secure and controlled environment for malware analysis using FlareVM and REMnux. The sandbox enables both static and dynamic analysis while ensuring network isolation to prevent unintended infections. The goal is to study how malware behaves, interacts with the system, and communicates over the network.</p>
+
+<p><strong>Environment Setup:</strong></p>
+<ul>
+  <li><strong>FlareVM (Windows VM):</strong> Pre-configured with reverse engineering and malware analysis tools.</li>
+  <li><strong>REMnux (Linux VM):</strong> Used for network forensics and malware communication analysis.</li>
+  <li><strong>VirtualBox:</strong> Provides an isolated virtualization environment.</li>
+  <li><strong>INetSim:</strong> Simulates various internet services to observe malware network activity.</li>
+</ul>
+
+<p><strong>Methodology:</strong></p>
+<ol>
+  <li><strong>Setting Up Virtual Machines:</strong>
+    <ul>
+      <li>Installed and configured FlareVM and REMnux in VirtualBox.</li>
+      <li>Assigned a host-only network adapter to ensure network isolation.</li>
+    </ul>
+  </li>
+  <li><strong>Static Analysis:</strong>
+    <ul>
+      <li>Scanned the malware sample using VirusTotal to check for known threats.</li>
+      <li>Analyzed the file structure using PEview, PEiD, and PE Studio.</li>
+      <li>Extracted hidden strings using FLOSS to identify potential commands and functions.</li>
+    </ul>
+  </li>
+  <li><strong>Dynamic Analysis:</strong>
+    <ul>
+      <li>Executed the malware within FlareVM and monitored its behavior.</li>
+      <li>Used Procmon to track file system, registry, and process changes.</li>
+      <li>Checked system modifications using CFF Explorer.</li>
+      <li>Examined active network connections with TCPView.</li>
+    </ul>
+  </li>
+  <li><strong>Network Traffic Monitoring:</strong>
+    <ul>
+      <li>Configured INetSim on REMnux to simulate internet services.</li>
+      <li>Captured network traffic using Wireshark to analyze HTTP, DNS, and other protocol interactions.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Tools & Technologies Used:</strong></p>
+<ul>
+  <li><strong>Malware Analysis Environments:</strong> FlareVM, REMnux</li>
+  <li><strong>Virtualization:</strong> VirtualBox</li>
+  <li><strong>Static Analysis Tools:</strong> VirusTotal, FLOSS, PEview, PEiD, PE Studio</li>
+  <li><strong>Dynamic Analysis Tools:</strong> Procmon, CFF Explorer, TCPView</li>
+  <li><strong>Network Analysis Tools:</strong> INetSim, Wireshark</li>
+</ul>
+
+<p><strong>Expected Outcomes:</strong></p>
+<ul>
+  <li>Successfully executed and monitored malware in a secure, isolated environment.</li>
+  <li>Identified malware persistence techniques and behavioral patterns.</li>
+  <li>Gained insights into how malware interacts with system resources and networks.</li>
+  <li>Documented findings and mitigation strategies in a detailed report.</li>
+</ul>
+
+<p>For a detailed breakdown of this project, check out my <a href="https://medium.com/system-weakness/analyzing-malware-with-flarevm-and-remnux-a-step-by-step-guide-e4b9eb4d54ce" target="_blank">Medium blog</a>.</p>
+
+
+<h3 id="project-2-ids-integration-with-siem"><strong>Project 2: IDS Integration with SIEM for Intrusion Detection and Monitoring</strong></h3>
+
+<p><strong>Objective:</strong> This project focuses on integrating an Intrusion Detection System (IDS) with a Security Information and Event Management (SIEM) solution to detect and monitor security threats in a simulated network environment. The goal is to understand how IDS and SIEM tools work together to identify and mitigate security threats effectively.</p>
+
+<p><strong>Environment Setup:</strong></p>
+<ul>
+  <li><strong>Kali Linux (Attacker):</strong> Configured with NAT networking for controlled attack simulations.</li>
+  <li><strong>Ubuntu Server (Hosting Splunk):</strong> Set to NAT networking for secure log ingestion.</li>
+  <li><strong>Ubuntu PC (Running Snort):</strong> Runs in a bridged network and forwards logs to Splunk.</li>
+  <li><strong>Metasploitable2 (Vulnerable Machine):</strong> Used as a target for attack simulations.</li>
+  <li><strong>INetSim:</strong> Simulates network services for better attack analysis.</li>
+</ul>
+
+<p><strong>Methodology:</strong></p>
+<ol>
+  <li><strong>Network Configuration:</strong>
+    <ul>
+      <li>Set up a virtual network using NAT and Bridged networking.</li>
+      <li>Ensured proper isolation and connectivity for attack simulations.</li>
+    </ul>
+  </li>
+  <li><strong>Snort Installation & Configuration:</strong>
+    <ul>
+      <li>Installed Snort on Ubuntu PC.</li>
+      <li>Created and implemented custom intrusion detection rules.</li>
+      <li>Configured Snort to generate alert logs for security events.</li>
+    </ul>
+  </li>
+  <li><strong>Splunk Deployment:</strong>
+    <ul>
+      <li>Installed and configured Splunk on Ubuntu Server.</li>
+      <li>Integrated Snort logs with Splunk for centralized monitoring.</li>
+    </ul>
+  </li>
+  <li><strong>Attack Simulations:</strong>
+    <ul>
+      <li>Used Kali Linux to execute penetration tests on Metasploitable2.</li>
+      <li>Captured intrusion attempts via Snort and analyzed alerts in Splunk.</li>
+    </ul>
+  </li>
+  <li><strong>Security Event Analysis:</strong>
+    <ul>
+      <li>Configured a Splunk dashboard to visualize Snort alerts.</li>
+      <li>Monitored and identified potential security threats.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Tools & Technologies Used:</strong></p>
+<ul>
+  <li><strong>Intrusion Detection System:</strong> Snort</li>
+  <li><strong>SIEM Solution:</strong> Splunk</li>
+  <li><strong>Penetration Testing:</strong> Kali Linux</li>
+  <li><strong>Vulnerable Machine for Attacks:</strong> Metasploitable2</li>
+  <li><strong>Network Simulation:</strong> INetSim</li>
+</ul>
+
+<p><strong>Expected Outcomes:</strong></p>
+<ul>
+  <li>Real-time intrusion detection and alerting.</li>
+  <li>Effective monitoring and analysis of security events.</li>
+  <li>Hands-on experience with IDS and SIEM integration.</li>
+</ul>
+
+
+
+<p>There is my beginner’s guide to SIEM <a href="https://medium.com/system-weakness/how-splunk-enhances-cybersecurity-a-beginners-guide-to-siem-4c9d2855a9c0" target="_blank">Medium blog</a>.</p>
+<h3 id="project-3-network-traffic-analysis-with-wireshark"><strong>Project 3: Network Traffic Analysis with Wireshark</strong></h3>
+
+<p><strong>Objective:</strong> This project focuses on using Wireshark, a powerful network packet analyzer, to capture and analyze network traffic. By inspecting network packets, we can gain insights into communication protocols, troubleshoot network issues, and identify potential security threats.</p>
+
+<p><strong>Methodology:</strong></p>
+<ol>
+  <li><strong>Wireshark Installation:</strong>
+    <ul>
+      <li>Installed Wireshark on Windows, macOS, and Linux using their respective package managers.</li>
+      <li>Configured necessary permissions for live packet capturing.</li>
+    </ul>
+  </li>
+  <li><strong>Capturing Network Traffic:</strong>
+    <ul>
+      <li>Identified active network interfaces for packet capturing.</li>
+      <li>Started live captures using Wireshark’s GUI and CLI options.</li>
+    </ul>
+  </li>
+  <li><strong>Analyzing Captured Packets:</strong>
+    <ul>
+      <li>Examined packet structure, including headers, protocols, and payloads.</li>
+      <li>Applied display filters to isolate specific network traffic (e.g., HTTP, DNS, TCP).</li>
+    </ul>
+  </li>
+  <li><strong>Advanced Packet Inspection:</strong>
+    <ul>
+      <li>Used "Follow TCP Stream" to analyze entire conversations between two endpoints.</li>
+      <li>Decoded encrypted and compressed packets for deeper analysis.</li>
+    </ul>
+  </li>
+  <li><strong>Customizing Wireshark for Efficient Analysis:</strong>
+    <ul>
+      <li>Configured color coding for different protocol types.</li>
+      <li>Customized preferences for better visibility and efficiency.</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Tools & Technologies Used:</strong></p>
+<ul>
+  <li><strong>Packet Analysis:</strong> Wireshark</li>
+  <li><strong>Operating Systems:</strong> Windows, macOS, Linux</li>
+  <li><strong>Network Protocols:</strong> TCP, UDP, HTTP, DNS, ICMP</li>
+</ul>
+
+<p><strong>Expected Outcomes:</strong></p>
+<ul>
+  <li>Hands-on experience with real-time network traffic monitoring.</li>
+  <li>Improved ability to troubleshoot network issues using packet analysis.</li>
+  <li>Better understanding of how network protocols function.</li>
+  <li>Enhanced skills in filtering and interpreting network packets for cybersecurity.</li>
+</ul>
+
+<p>Here is my Wireshark 101 guide <a href="https://medium.com/@logeshwarS/wireshark-101-how-to-capture-and-analyze-network-traffic-6cda579862e0" target="_blank">Medium blog</a>.</p>
+
+<h2 id="what-ive-learned-so-far"><strong>My Learning Journey:</strong></h2>
+
+<ul>
+  <li><strong>Intrusion Detection & Security Monitoring</strong> – Gained hands-on experience with Snort and Splunk for real-time threat detection, log analysis, and forensic investigations.</li>
+
+  <li><strong>Linux System Administration</strong> – Strong command of Linux, using it extensively for security analysis, system hardening, penetration testing, firewall configuration, and automation with bash scripting.</li>
+
+  <li><strong>Malware Analysis</strong> – Worked with REMnux and FlareVM to set up a secure sandbox for malware analysis. Conducted both static and dynamic analysis to study malware behavior.</li>
+
+  <li><strong>Network Security & Traffic Analysis</strong> – Used Wireshark and Nmap to capture and analyze network traffic, identifying anomalies and security threats. Configured INetSim to simulate real-world network services for controlled malware testing.</li>
+
+  <li><strong>Google Cybersecurity Certification</strong> – Gained knowledge in security operations, incident response, risk management, log analysis, vulnerability assessment, and security frameworks.</li>
+
+</ul>
+
+<p>These experiences have helped me build a strong foundation in <strong>threat detection, malware analysis, and Linux security</strong>, aligning with my goal of becoming a <strong>SOC Analyst specializing in malware analysis and forensics</strong>.</p>
+
+
+
+<h2 id="career-plan"><strong>Career Plan</strong></h2>
+
+<p>My ultimate goal is to become a Security Operations Center (SOC) Analyst, specializing in <strong>malware analysis</strong> and <strong>digital forensics</strong>. I am deeply passionate about understanding how cyber threats operate, dissecting malicious software, and strengthening incident response strategies. By focusing on these areas, I aim to contribute to the cybersecurity field by identifying, mitigating, and preventing security breaches.</p>
+
+<p><strong>Short-Term Goals:</strong></p>
+<ul>
+  <li>Enhance my expertise in SOC operations, SIEM tools, and network security monitoring.</li>
+  <li>Deepen my knowledge of malware reverse engineering using tools like Ghidra, IDA Pro, and REMnux.</li>
+  <li>Gain hands-on experience in forensic analysis to trace cyberattacks and understand attacker methodologies.</li>
+  <li>Build a strong foundation in penetration testing and ethical hacking.</li>
+</ul>
+
+<p><strong>Long-Term Goals:</strong></p>
+<ul>
+  <li>Obtain the <strong>Offensive Security Certified Professional (OSCP)</strong> certification to validate my penetration testing skills.</li>
+  <li>Pursue specialized certifications such as <strong>GIAC Certified Forensic Analyst (GCFA)</strong> or <strong>Certified Malware Analyst (GREM)</strong>.</li>
+  <li>Work towards a senior SOC role or transition into a dedicated malware analyst position.</li>
+  <li>Contribute to the cybersecurity community by publishing research, creating write-ups, and sharing knowledge.</li>
+</ul>
+
+<p><strong>Why This Path?</strong></p>
+<ul>
+  <li><strong>Problem-Solving & Investigation:</strong> I love the challenge of uncovering hidden threats and piecing together complex attack chains.</li>
+  <li><strong>Continuous Learning:</strong> Cybersecurity is an ever-evolving field, and I enjoy keeping up with the latest attack techniques and defense strategies.</li>
+  <li><strong>Impact:</strong> Being able to detect and respond to threats in real time ensures that organizations stay secure, making my work meaningful.</li>
+</ul>
+
+<p>As I continue this journey, I plan to document my progress through <strong>blogs, write-ups, and research papers</strong>. I believe in the power of sharing knowledge and learning from the cybersecurity community. If you're on a similar path, feel free to connect—let’s grow together in this exciting field!</p>
+
+<h2 id="contact-information">Contact Information</h2>
+
+<p>Connect with me through my platforms!</p>
+
+<ul>
+  <li><strong>GitHub:</strong> https://github.com/Logeshwar-S</li>
+  <li><strong>Email:</strong> <a href="mailto:logeshwar.0512@gmail.com">logeshwar.0512@gmail.com</a></li>
+
+</ul>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  
+
+</body></html>
